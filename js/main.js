@@ -36,6 +36,11 @@ const staff = [
     }
 ]
 
+// let msg = document.getElementById("contaienr");
+
 for(i = 0; i < staff.length; i++) {
     console.log(`Nome: ${staff[i].nome}, Ruolo: ${staff[i].ruolo}, srcImg: ${staff[i].img}`);
+
+    
+    document.getElementById("container").innerHTML += `<p>Nome: ${staff[i].nome}, Ruolo: ${staff[i].ruolo}, srcImg: ${staff[i].img}</p>`;
 }
